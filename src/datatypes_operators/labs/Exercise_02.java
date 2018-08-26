@@ -23,7 +23,15 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int First = 10;
+        double Second = First;
+        System.out.println(Second + " " + "<-- converted from int with a value of 10 to a double");
+
+        double Third = 10.5;
+        int Forth = (int) Third;
+        System.out.println(Forth + " " + "<-- converted from a double with a value of 10.5 to an int");
+
+        System.out.println("Information is lost when converting from double to int. It also always rounds down");
 
     }
 }
