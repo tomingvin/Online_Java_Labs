@@ -2,21 +2,79 @@ Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
+	
+	tom@HP-ubuntu:~$ cd documents
+
      2. Create new folder Terminal_testing
+
+	tom@HP-ubuntu:~/Documents$ mkdir Terminal_testing
+
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ touch <filename>	
+
          b. print the directory path
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ pwd
+	/home/tom/Documents/Terminal_testing
+
          c. list the contents of the folder
+	
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ ls -al
+	total 8
+	drwxr-xr-x 2 tom tom 4096 Aug 26 16:29 .
+	drwxr-xr-x 4 tom tom 4096 Aug 26 16:25 ..
+	-rw-r--r-- 1 tom tom    0 Aug 26 16:28 first.txt
+	-rw-r--r-- 1 tom tom    0 Aug 26 16:29 second.txt
+	-rw-r--r-- 1 tom tom    0 Aug 26 16:29 third.txt
+
      5. Inside of folder Terminal_testing, create a new folder
+	
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ mkdir Copy_test
+	
      6. Copy a file from Terminal_testing to the new folder
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ cp first.txt Copy_test
+
      7. Move a different file from Terminal testing to the new folder
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ mv second.txt Copy_test/second.txt
+
      8. Demonstrate removing:
          a. A file
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing/Copy_test$ rm first.txt
+	tom@HP-ubuntu:~/Documents/Terminal_testing/Copy_test$ ls
+	second.txt
+
          b. A folder
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ rm -R Copy_test
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ ls -al
+	total 8
+	drwxr-xr-x 2 tom tom 4096 Aug 26 16:51 .
+	drwxr-xr-x 4 tom tom 4096 Aug 26 16:25 ..
+	-rw-r--r-- 1 tom tom    0 Aug 26 16:28 first.txt
+	-rw-r--r-- 1 tom tom    0 Aug 26 16:29 third.txt
+
+	
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ vim first.txt
+
          b. Use $ cat print contents of file
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ cat first.txt
+	Some text, more text and then some
+
          c. Use $ grep to search for a word inside file
+
+	tom@HP-ubuntu:~/Documents/Terminal_testing$ grep "text" first.txt
+	Some text, more text and then some
+	(the color of "text" was red)
+
 
 Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
