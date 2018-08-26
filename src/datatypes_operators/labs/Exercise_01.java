@@ -16,7 +16,12 @@ public class Exercise_01 {
 
     public static void main(String[] args) {
 
-        // write code here
+        int Number = 32;
+        double DoubleNumber = 10.5;
+        float FloatNumber = 10.5f;
+        char SomeLetter = 'a';
+        System.out.println("Number = (" + Number + ") DoubleNumber = (" + DoubleNumber + ") FloatNumber = (" + FloatNumber + ") SomeLetter = (" + SomeLetter + ")");
+
 
     }
 }
