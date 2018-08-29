@@ -21,31 +21,34 @@ public class Exercise_02 {
         // assign input to variable as int
         int number = scanner.nextInt();
 
-            if (number == 1) {
+        if (number < 8) {
+
+            if (number == 1)
                 System.out.println("Monday");
 
-            } else if (number == 2) {
+            if (number == 2)
                 System.out.println("Tuesday");
 
-            } else if (number == 3) {
+            if (number == 3)
                 System.out.println("Wednensday");
 
-            } else if (number == 4) {
+            if (number == 4)
                 System.out.println("Thursday");
 
-            } else if (number == 5) {
+            if (number == 5)
                 System.out.println("Friday");
 
-            } else if (number == 6) {
+            if (number == 6)
                 System.out.println("Saturday");
 
-            } else if (number == 7) {
+            if (number == 7)
                 System.out.println("Sunday");
 
+            if (number < 1)
+                System.out.println("There is no day zero and there are no negative days! :)");
 
-            } else {
-                System.out.println("There are 7 days in a week, so " + number + " is not an option");
-            }
-
+        } else {
+            System.out.println("There are 7 days in a week, so " + number + " is not an option");
         }
     }
+}
