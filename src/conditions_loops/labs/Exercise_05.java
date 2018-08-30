@@ -22,10 +22,13 @@ public class Exercise_05 {
 
         //input from user, a lover and upper number
         System.out.println("I will calculate the value of some numbers, and their average. Please give me a lower and upper number :) Press enter to continue...");try{
-            System.in.read();}catch(Exception e){
-                e.printStackTrace();
-            }
+            System.in.read();
         }
+
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
         // create scanner
         Scanner lowerScan = new Scanner(System.in);
         // prompt user
