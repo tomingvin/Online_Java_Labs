@@ -30,7 +30,7 @@ public class Exercise_02 {
                 System.out.println("Tuesday");
 
             if (number == 3)
-                System.out.println("Wednensday");
+                System.out.println("Wednesday");
 
             if (number == 4)
                 System.out.println("Thursday");
