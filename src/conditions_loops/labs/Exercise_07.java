@@ -18,7 +18,24 @@ public class Exercise_07 {
         // prompt user
         System.out.print("Some text: ");
         // assign input to variable as int
-        String vowel = scanner.nextLine();
-        System.out.println(vowel);
+        String word = scanner.nextLine();
+        char[] vowelArray = {'a', 'e', 'i', 'o', 'u', 'y'};
+        char[] textArray = word.toLowerCase().toCharArray();
+        int intVowel = 0;
+        int intText = 0;
+        char cH = word.charAt(0);
+
+        while(intVowel <= 5){
+            if(vowelArray == textArray)
+            System.out.println(intVowel);
+            //System.out.println(intText);
+            intVowel++;
+            intText++;
+
+
+        }
+
+
+
     }
 }
