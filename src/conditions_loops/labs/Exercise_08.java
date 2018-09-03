@@ -8,4 +8,15 @@ package conditions_loops.labs;
  */
 
 public class Exercise_08 {
+    public static void main(String[] args) {
+
+        int maxNumber = 1000;
+        int minNumer = 1;
+
+        do {
+            System.out.println(maxNumber);
+            maxNumber -= 3;
+        } while (maxNumber >= minNumer);
+
+    }
 }

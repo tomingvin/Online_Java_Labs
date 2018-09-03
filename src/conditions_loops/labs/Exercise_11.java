@@ -20,4 +20,12 @@ package conditions_loops.labs;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        for (int multiplyA = 1; multiplyA <= 10; multiplyA++) {
+            for (int multiplyB = 1; multiplyB <= 10; multiplyB++) {
+                System.out.print(multiplyA * multiplyB + "|" + "\t");
+            }
+            System.out.println();
+        }
+    }
 }
