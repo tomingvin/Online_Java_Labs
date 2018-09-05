@@ -13,11 +13,11 @@ import java.util.Scanner;
 public class Exercise_07 {
     public static void main(String[] args) {
 
-        // create scanner
+
         Scanner scanner = new Scanner(System.in);
-        // prompt user
+
         System.out.print("Some text: ");
-        // assign input to variable as int
+
         String word = scanner.nextLine();
         char[] vowelArray = {'a', 'e', 'i', 'o', 'u', 'y'};
         char[] textArray = word.toLowerCase().toCharArray();

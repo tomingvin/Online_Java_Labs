@@ -21,27 +21,19 @@ public class Exercise_05 {
     public static void main(String[] args) {
 
         //input from user, a lover and upper number
-        System.out.println("I will calculate the value of some numbers, and their average. Please give me a lower and upper number :) Press enter to continue...");try{
-            System.in.read();
-        }
+        System.out.println("I will calculate the value of some numbers, and their average. Please give me the lower number ");
 
-        catch(Exception e){
-            e.printStackTrace();
-        }
 
         // create scanner
-        Scanner lowerScan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // prompt user
-        System.out.print("Lower: ");
         // assign input to variable as int
-        int lower = lowerScan.nextInt();
-
+        int lower = scanner.nextInt();
+        System.out.println("Please give me the upper number: ");
         // create scanner
-        Scanner upperScan = new Scanner(System.in);
         // prompt user
-        System.out.print("Upper: ");
         // assign input to variable as int
-        int upper = upperScan.nextInt();
+        int upper = scanner.nextInt();
 
         int sum = 0;
         double average = 0.0;
