@@ -16,4 +16,42 @@ package objects_classes_methods.labs;
  *      Cars, animals, poker games, sports teams, trees, beers, people and so on.
  */
 
+public class Person {
 
+    public static void main(String[] args) {
+
+        Person john = new Person();
+     
+    }
+
+}
+
+ public   class Zombie extends Person {
+      public  Boolean friendly;
+        String food;
+        String song;
+
+        @Override
+        public String toString() {
+            return "Zombie{" +
+                    "friendly=" + friendly +
+                    ", food='" + food + '\'' +
+                    ", song='" + song + '\'' +
+                    '}';
+        }
+    }
+
+    class Clothing extends Person {
+        String shoes;
+        String pants;
+        String hat;
+
+        @Override
+        public String toString() {
+            return "Clothing{" +
+                    "shoes='" + shoes + '\'' +
+                    ", pants='" + pants + '\'' +
+                    ", hat='" + hat + '\'' +
+                    '}';
+        }
+    }
