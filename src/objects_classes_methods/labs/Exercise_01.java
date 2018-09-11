@@ -16,42 +16,91 @@ package objects_classes_methods.labs;
  *      Cars, animals, poker games, sports teams, trees, beers, people and so on.
  */
 
-public class Person {
+class Controller {
 
     public static void main(String[] args) {
-
-        Person john = new Person();
-     
+        Person tom = new Person(40, "Tom", "software engineer");
+        tom.setAge(41);
+        tom.setJobTitle("QA");
+        System.out.println(tom.toString());
     }
 
 }
 
- public   class Zombie extends Person {
-      public  Boolean friendly;
-        String food;
-        String song;
+class Person extends Animal{
 
-        @Override
-        public String toString() {
-            return "Zombie{" +
-                    "friendly=" + friendly +
-                    ", food='" + food + '\'' +
-                    ", song='" + song + '\'' +
-                    '}';
-        }
+
+    private String name;
+    private String jobTitle;
+
+    public Person (int age){
+
+        super(age, "homo sapien");
     }
 
-    class Clothing extends Person {
-        String shoes;
-        String pants;
-        String hat;
-
-        @Override
-        public String toString() {
-            return "Clothing{" +
-                    "shoes='" + shoes + '\'' +
-                    ", pants='" + pants + '\'' +
-                    ", hat='" + hat + '\'' +
-                    '}';
-        }
+    public Person(int age, String name) {
+        super(age, "homo sapien");
+        this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public Person(int age, String name, String jobTitle) {
+        super(age, "homo sapien");
+        this.name = name;
+        this.jobTitle = jobTitle;
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", age=" + getAge() +
+                ", species='" + getSpecies() + '\'' +
+                '}';
+    }
+}
+
+class Animal {
+
+    private int age;
+    private String species;
+
+    public Animal(int age, String species) {
+        this.age = age;
+        this.species = species;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+}
