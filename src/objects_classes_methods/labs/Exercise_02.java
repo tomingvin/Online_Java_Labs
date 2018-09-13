@@ -12,3 +12,37 @@ package objects_classes_methods.labs;
  */
 
 
+class Fruit {
+    public static void main(String[] args) {
+
+        Fruit apple = new Fruit();
+        Fruit pear = new Fruit();
+        System.out.println(apple.toString());
+        System.out.println(pear.toString());
+
+
+
+    }
+
+    public static void staticSecond(){
+
+        int number;
+        int age;
+
+
+    }
+
+    static void nunmberOfEatable(int eatable){
+
+        //totalt number minus isItRotten
+        int eatable
+
+    }
+
+    static void isItRotten(){
+
+        //if older than 12 months, then rotten
+
+    }
+
+}
