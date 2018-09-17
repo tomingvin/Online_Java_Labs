@@ -11,7 +11,7 @@ package objects_classes_methods.labs;
  *      4) A non-static method1 that calls another non-static method2 and passes a value to method2.
  */
 
-class MethodExamples {
+public class MethodExamples {
 
     public static void main(String[] args) {
 
@@ -69,5 +69,6 @@ class MethodExamples {
     public void nonStaticMethod4(){
         System.out.println("inside non-static method 4");
     }
+
 
 }
